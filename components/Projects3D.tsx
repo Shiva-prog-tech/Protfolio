@@ -440,7 +440,7 @@ const Project4DCard = ({
           </motion.div>
 
           {/* 4D action buttons with premium effects - responsive */}
-           {title!=="PowerDAO"&&
+          
              <motion.div
             className="flex flex-col sm:flex-row gap-3 md:gap-4"
             style={{
@@ -479,7 +479,6 @@ const Project4DCard = ({
               </span>
             </motion.button>
           </motion.div>
-            }
          
 
           {/* 4D floating decorative elements - hide on mobile */}
@@ -585,7 +584,7 @@ export default function Projects4D() {
       tags: ['React.js', 'Web3.js', 'Solidity', 'Tailwind CSS', 'Blockchain'],
       gradient: 'from-indigo-500 to-purple-600',
       image: '/projects/powerdao.jpg',
-      url: 'https://dapps.powerdao.ai/',
+      url: 'https://dapps.powerbrowser.app/',
       role: 'Frontend Developer',
       duration: '2023 - 2024',
       highlights: [
