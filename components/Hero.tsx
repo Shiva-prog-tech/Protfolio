@@ -113,7 +113,7 @@ export default function Hero() {
             >
               <div className="inline-flex items-center gap-2 px-4 sm:px-5 lg:px-6 py-1.5 sm:py-2 rounded-full glass-effect border border-cyber-blue/30 mb-3 sm:mb-4">
                 <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-neon-green rounded-full animate-pulse"></span>
-                <span className="text-xs sm:text-sm font-medium text-cyber-blue">Available for opportunities</span>
+                <span className="text-xs sm:text-sm font-medium text-cyber-blue">Open for opportunities</span>
               </div>
             </motion.div>
 
@@ -152,52 +152,52 @@ export default function Hero() {
             </motion.div>
 
             {/* Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-4 sm:pt-6 px-4 sm:px-0"
-            >
-              <a
-                href="#projects"
-                className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full font-bold text-sm sm:text-base lg:text-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-105 text-center"
-              >
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  <Rocket className="w-4 h-4 sm:w-5 sm:h-5" />
-                  View Projects
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyber-purple to-cyber-pink opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </a>
+           
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.7 }}
+  className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-4 sm:pt-6 px-4 sm:px-0"
+>
+  <a
+    href="#projects"
+    className="group relative px-5 sm:px-6 py-2 sm:py-2.5 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-full font-semibold text-sm sm:text-base lg:text-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-105 text-center"
+  >
+    <span className="relative z-10 flex items-center justify-center gap-2">
+      <Rocket className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+      View Projects
+    </span>
+    <div className="absolute inset-0 bg-gradient-to-r from-cyber-purple to-cyber-pink opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  </a>
 
-              <a
-                href="#contact"
-                className="group px-6 sm:px-8 py-3 sm:py-4 border-2 border-cyber-blue rounded-full font-bold text-sm sm:text-base lg:text-lg hover:bg-cyber-blue hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center"
-              >
-                Get In Touch
-              </a>
+  <a
+    href="#contact"
+    className="group px-5 sm:px-6 py-2 sm:py-2.5 border-2 border-cyber-blue rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:bg-cyber-blue hover:text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center"
+  >
+    Get In Touch
+  </a>
 
-              <button
-                onClick={handleDownloadResume}
-                disabled={isDownloading}
-                className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-cyber-purple to-cyber-pink rounded-full font-bold text-sm sm:text-base lg:text-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-105 text-center disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  {isDownloading ? (
-                    <>
-                      <FileText className="w-4 h-4 sm:w-5 sm:h-5 animate-pulse" />
-                      <span>Downloading...</span>
-                    </>
-                  ) : (
-                    <>
-                      <Download className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
-                      <span>Resume</span>
-                    </>
-                  )}
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyber-blue to-cyber-purple opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
-            </motion.div>
-
+  <button
+    onClick={handleDownloadResume}
+    disabled={isDownloading}
+    className="group relative px-5 sm:px-6 py-2 sm:py-2.5 bg-gradient-to-r from-cyber-purple to-cyber-pink rounded-full font-semibold text-sm sm:text-base lg:text-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:scale-105 text-center disabled:opacity-50 disabled:cursor-not-allowed"
+  >
+    <span className="relative z-10 flex items-center justify-center gap-2">
+      {isDownloading ? (
+        <>
+          <FileText className="w-3.5 h-3.5 sm:w-4 sm:h-4 animate-pulse" />
+          <span>Downloading...</span>
+        </>
+      ) : (
+        <>
+          <Download className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:animate-bounce" />
+          <span>Resume</span>
+        </>
+      )}
+    </span>
+    <div className="absolute inset-0 bg-gradient-to-r from-cyber-blue to-cyber-purple opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  </button>
+</motion.div>
             {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

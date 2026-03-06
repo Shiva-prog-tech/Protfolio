@@ -226,7 +226,7 @@ export default function Navigation() {
                   <div className="flex justify-center gap-4">
                     {/* Add social links or other content here */}
                     <div className="text-sm text-gray-400">
-                      © 2024 Portfolio
+                      Open for opportunities
                     </div>
                   </div>
                 </div>
